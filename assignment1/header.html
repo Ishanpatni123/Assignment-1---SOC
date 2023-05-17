@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- EXTERNAL LINKS -->
+    <link rel="stylesheet" href="css/header.css" />
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Close the dropdown if the user clicks outside of it
+    </script>
+    <style>
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropbtn {
+        /* background-color: #3498DB; */
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section>
+        <!-- MAIN CONTAINER -->
+        <div id="container">
+          <!-- SHOP NAME -->
+          <div id="shopName">
+            <a href="index.html"> <b>ONLINE</b>BAAZAR </a>
+          </div>
+          <!-- COLLCETIONS ON WEBSITE -->
+          <div id="collection"></div>
+          <!-- SEARCH SECTION -->
+          <div id="search">
+            <i class="fas fa-search search"></i>
+            <input
+              type="text"
+              id="input"
+              name="searchBox"
+              placeholder="Search for Clothing and Accessories"
+            />
+          </div>
+          <!-- USER SECTION (CART AND USER ICON) -->
+          <div id="user">
+            <div id="product-dropdown" class="dropdown">
+              <!-- <i class="dropbtn"> -->
+              <i onmouseover="myFunction()" class="dropbtn">
+                <i class="fa" style="font-size: 34px"
+                  >&#xf07a;
+                  <span class="badge badge-warning" id="lblCartCount">0</span>
+                </i>
+              </i>
+              <div id="myDropdown" class="dropdown-content">
+                <!-- <a href="#">Item 1</a>
+          <a href="#">Item 2</a>
+          <a href="#">Item 3</a> -->
+              </div>
+            </div>
+            <a href="#">
+              <i class="fas fa-user-circle userIcon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+  <!-- <script src="header.js"></script> -->
+</html>
